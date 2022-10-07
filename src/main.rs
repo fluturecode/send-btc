@@ -1,3 +1,10 @@
+
+
+fn console() {
+
+}
+
+
 fn main() {
-    println!("Hello, world!");
+    console()
 }
