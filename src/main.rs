@@ -8,6 +8,12 @@ fn console() {
     let mut command = String::new();
 
     io::stdin().read_line(&mut command)
+
+    if command.trim().eq('s') {
+        send_bitcoin()
+    } else if command.trim().eq('r) {
+        recieve_bitcoin()
+    }
 }
 
 
