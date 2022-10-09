@@ -1,5 +1,9 @@
 use std::io;
 
+fn send_bitcoin() {
+
+}
+
 fn console() {
     println!("\nLet's have fun with Bitcoin!\n")
 
@@ -13,6 +17,8 @@ fn console() {
         send_bitcoin()
     } else if command.trim().eq('r) {
         recieve_bitcoin()
+    } else {
+        exit_console()
     }
 }
 
