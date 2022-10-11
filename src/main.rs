@@ -1,11 +1,16 @@
 use std::io;
+use rand::Rng;
 
 fn send_bitcoin() {
 
 }
 
 fn recieve_bitcoin() {
+    println!("\nWe're going to receive some Bitcoin!\n")
 
+    let amount = rand::thread_rng().gen_range(1, 10);
+
+    println!("You just received {} Bitcoin!\n", amount);
 }
 
 fn exit_console() {
