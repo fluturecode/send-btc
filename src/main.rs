@@ -20,7 +20,7 @@ fn send_bitcoin() {
         println!("How many Bitcoin do you want to send?\n");
 
         let mut amount = String::new();
-        io::stdin().read_line(&mut amount;
+        io::stdin().read_line(&mut amount);
 
         println!("\nYou sent {} Bitcoin to {}!\n", amount, recipient);
     } else {
