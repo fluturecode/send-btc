@@ -2,7 +2,15 @@ use std::io;
 use rand::Rng;
 
 fn send_bitcoin() {
-    println!("Hello")
+    println!("\nWe're going to send some Bitcoin!\n");
+
+    let clients = vec!["Homer", "Marge", "Bart", "Lisa"];
+
+    println!("Who do you want to sendd Bitcoin to?\n");
+    for client in &clients {
+        print!("{} ", client);
+    }
+    println!("\n");
 }
 
 fn recieve_bitcoin() {
