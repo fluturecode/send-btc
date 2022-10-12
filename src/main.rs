@@ -11,6 +11,21 @@ fn send_bitcoin() {
         print!("{} ", client);
     }
     println!("\n");
+
+    let mut recipient = String::new();
+    io::stdin().read_line(&mut recipient);
+
+    if clients.contains(&recipient.trim()) {
+
+        println!("How many Bitcoin do you want to send?\n");
+
+        let mut amount = String::new();
+        io::stdin().read_line(&mut amount;
+
+        println!("\nYou sent {} Bitcoin to {}!\n", amount, recipient);
+    } else {
+        println!("{} is not in your contacts!", recipient.trim());
+    }
 }
 
 fn recieve_bitcoin() {
@@ -31,7 +46,6 @@ fn console() {
     println!("Do you want to send (s) or receive (r) Bitcoin?\n");
                 // struct::method
     let mut command = String::new();
-
     io::stdin().read_line(&mut command);
 
     if command.trim().eq("s") {
