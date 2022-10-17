@@ -1,3 +1,4 @@
 {
-  "rust-analyzer.cargo.extraEnv": {}
+  "rust-analyzer.cargo.extraEnv": {},
+  "python.linting.enabled": true
 }
