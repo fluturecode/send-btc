@@ -22,7 +22,7 @@ fn send_bitcoin() {
         let mut amount = String::new();
         io::stdin().read_line(&mut amount);
 
-        println!("\nYou sent {} Bitcoin to {}!\n", amount, recipient);
+        println!("\nYou sent {} Bitcoin to {}!\n", amount.trim(), recipient.trim());
     } else {
         println!("{} is not in your contacts!", recipient.trim());
     }
