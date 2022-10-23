@@ -1,3 +1,1 @@
-## RUST App
-
-Basic Rust app for sending crypto currencies.
+## Basic Rust app for sending crypto currencies.
